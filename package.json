@@ -1,0 +1,39 @@
+{
+    "name": "eslint-config-scality",
+    "version": "8.2.0",
+    "description": "ESLint config for Scality's Node.js coding guidelines",
+    "main": "index.js",
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "test": "yarn run --silent lint && yarn run --silent lint_md",
+        "lint": "eslint -c index.js $(git ls-files '*.js')",
+        "lint_md": "node bin/mdlint.js $(git ls-files '*.md')"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/scality/eslint-config-scality"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^7.2.0",
+        "eslint-plugin-import": "^2.21.2",
+        "eslint-plugin-jsx-a11y": "^6.3.0",
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-hooks": "^4.1.2"
+    },
+    "keywords": [
+        "eslint",
+        "eslintconfig",
+        "config",
+        "airbnb",
+        "scality",
+        "javascript",
+        "markdown",
+        "styleguide"
+    ],
+    "author": "Scality",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/scality/eslint-config-scality"
+}
